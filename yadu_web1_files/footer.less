@@ -1,0 +1,180 @@
+@width: `document.body.clientWidth`;
+@widthrate: `document.body.clientWidth/1920`;
+
+
+@media only screen and (min-width: 768px) {
+
+    
+    div#yadufooter ul.service li {
+        padding-top: @widthrate * 15px;
+        height: @widthrate * 110px;
+    }
+    div#yadufooter ul.service li div {
+        height: @widthrate * 50px;
+        width: @widthrate * 50px;
+        margin:0 auto @widthrate * 8px;
+    }
+
+    
+    div#yadufooter ul.service li span {
+        font-size: @widthrate * 16px;
+    }
+
+    div#yadufooter  div#directory_list div#directory_list_box div#directory2 li#directory2prev a,
+    div#yadufooter  div#directory_list div#directory_list_box div#directory2 li#directory2next a{
+        margin-left: @widthrate * 25px;
+    }
+
+    div#yadufooter  div#directory_list div#directory_list_box div#directory2 li#directory2Title a{
+        width: @widthrate * 20px;
+        height: @widthrate * 16px;
+        line-height: @widthrate * 16px;
+        margin: 0 @widthrate * 5px;
+    }
+
+    /*div#yadufooter div#directory_list div#directory_list_box div#listDiv li{
+        font-size: @widthrate * 15px;
+    }*/
+    
+
+    div#yadufooter div#directory_list div#directory_list_box div#listDiv ul.list-group a{
+        font-size: 13px;
+    }
+
+    div#yadufooter div#directory_list div#telDiv span.telDivSpan1 {
+        font-size: @widthrate * 16px;
+    }
+    
+    div#yadufooter div#directory_list div#telDiv span.telDivSpan2 {
+        font-size: @widthrate * 12px;
+    }
+    
+    div#yadufooter div#directory_list div#telDiv span.telDivSpan3 {
+        font-size: @widthrate * 30px;
+    }
+    
+    div#yadufooter div#directory_list div#telDiv div#weiboiconLink2{
+        width: @widthrate * 35px;
+
+    }
+    
+    div#yadufooter div#directory_list div#telDiv div#weixiniconLink2{
+        width: @widthrate * 35px;
+        margin-left:@widthrate * 15px;
+    }
+    
+    footer {
+        height: @widthrate * 90px;
+        padding-top: (@widthrate * 90px - 40px)/2;
+    }
+
+    footer div.footerimg div#footerimgBox{
+        width: @widthrate * 156px;
+        height: @widthrate * 37px;
+    }
+    
+    
+    footer div.footerText{
+        padding-left: @widthrate * 12px;
+    }
+
+    footer div.footerlink a{
+        font-size: 12px;
+    }
+
+    footer div.address span {
+        font-size: 12px;
+    }
+    
+    
+}
+
+@media only screen and (min-width: 1200px) {
+
+    div#yadufooter ul.service li span {
+        font-size: 16px;
+    }
+
+
+    div#yadufooter div#directory_list div#directory_list_box div#listDiv li{
+        font-size: 14px;
+    }
+
+
+    div#yadufooter div#directory_list div#directory_list_box div#listDiv ul.list-group a{
+        font-size: 13px;
+    }
+
+    div#yadufooter div#directory_list div#telDiv span.telDivSpan1 {
+        font-size: 16px;
+    }
+
+    div#yadufooter div#directory_list div#telDiv span.telDivSpan2 {
+        font-size: 12px;
+    }
+
+    div#yadufooter div#directory_list div#telDiv span.telDivSpan3 {
+        font-size: @widthrate * 30px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    div#yadufooter ul.service li span {
+        font-size: 14px;
+    }
+
+    div#yadufooter div#directory_list div#directory_list_box div#listDiv li{
+        font-size: 14px;
+    }
+
+
+    div#yadufooter div#directory_list div#directory_list_box div#listDiv ul.list-group a{
+        font-size: 13px;
+    }
+    div#yadufooter div#directory_list div#telDiv span.telDivSpan1 {
+        font-size: 15px;
+    }
+
+    div#yadufooter div#directory_list div#telDiv span.telDivSpan2 {
+        font-size: 12px;
+    }
+
+    div#yadufooter div#directory_list div#telDiv span.telDivSpan3 {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (min-width: 1440px) {
+    footer div.footerimg {
+        margin-top: @widthrate * 1px + 3px;
+
+    }
+    
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1440px){ 
+    footer div.footerimg {
+        margin-top: @widthrate * 1px + 6px;
+
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+    footer {
+        height: 45px;
+    }
+
+}
+@media screen and (min-width: 768px) and (max-width: 820px){
+
+    div#yadufooter ul.service{
+        height: 50px;
+    }
+
+}
+

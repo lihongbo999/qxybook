@@ -1,0 +1,172 @@
+#floatDiv {
+	z-index: 1000;
+	position:fixed;
+	top:70%;
+	right: 1%;
+	cursor: pointer;
+}
+#floatDiv #floatBox1,
+#floatDiv #floatBox2,
+#floatDiv #floatBox3,
+#floatDiv #floatBox4 {
+	float: right;
+}
+
+#floatDiv #floatDiv0,
+#floatDiv #floatDiv1,
+#floatDiv #floatDiv2,
+#floatDiv #floatDiv3 {
+	width: 44px;
+	height: 44px;
+}
+#floatDiv #floatDiv0 {
+	margin-bottom: 5px;
+}
+#floatDiv #floatDiv1 {
+	margin-bottom: 5px;
+}
+#floatDiv #floatDiv2 {
+	margin-bottom: 5px;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+	#floatDiv #floatBox2 {
+		display: none;
+		margin-right: 15px;
+		/*margin-top: -12px*/;
+		margin-top: 37px;
+		padding: 5px 10px;
+		background-color: white;
+		border: 1px solid #dddddd;
+		/*	height: 167px;
+            width: 142px;*/
+	}
+
+	#floatDiv #floatBox2 ul.qq_context{
+		padding: 10px 10px;
+	}
+	#floatDiv #floatBox2 ul.qq_context li{
+		list-style-type:none;
+	}
+
+	#floatDiv #floatBox2 #floatBox2triangleout{
+		position:absolute;
+		width:0;
+		height:0px;
+		border:10px solid transparent;
+		border-right: 0px;
+		border-left-color:#dddddd;
+		right:50px;
+		top:30%;
+
+	}
+	#floatDiv #floatBox2 #floatBox2trianglein{
+		position:absolute;
+		width:0;
+		height:0px;
+		border:10px solid transparent;
+		border-right: 0px;
+		border-left-color:#fff;
+		background-color:transparent;
+		right:52px;
+		top:30%;
+	}
+
+	#floatDiv #floatBox3 {
+		display: none;
+		margin-right: 15px;
+		margin-top: 37px;
+		padding: 5px 10px;
+		background-color: white;
+		border: 1px solid #dddddd;
+	}
+
+	#floatDiv #floatBox3 span{
+		color: #c39e53;
+		font-size: 12px;
+	}
+
+	#floatDiv #floatBox3 img{
+		margin-top: 5px;
+		width: 132px;
+	}
+
+	#floatDiv #floatBox3 #floatBox3triangleout{
+		position:absolute;
+		width:0;
+		height:0px;
+		border:10px solid transparent;
+		border-right: 0px;
+		border-left-color:#dddddd;
+		right:50px;
+		top:53%;
+
+	}
+	#floatDiv #floatBox3 #floatBox3trianglein{
+		position:absolute;
+		width:0;
+		height:0px;
+		border:10px solid transparent;
+		border-right: 0px;
+		border-left-color:#fff;
+		background-color:transparent;
+		right:52px;
+		top:53%;
+	}
+
+
+	#floatDiv #floatBox4 {
+		display: none;
+		margin-right: 15px;
+		margin-top: -12px;
+		padding: 5px 10px;
+		background-color: white;
+		border: 1px solid #dddddd;
+	}
+
+	#floatDiv #floatBox4 span{
+		color: #c39e53;
+		font-size: 12px;
+	}
+
+	#floatDiv #floatBox4 img{
+		margin-top: 5px;
+		width: 132px;
+	}
+
+	#floatDiv #floatBox4 #floatBox4triangleout{
+		position:absolute;
+		width:0;
+		height:0px;
+		border:10px solid transparent;
+		border-right: 0px;
+		border-left-color:#dddddd;
+		right:50px;
+		top:5%;
+
+	}
+	#floatDiv #floatBox4 #floatBox4trianglein{
+		position:absolute;
+		width:0;
+		height:0px;
+		border:10px solid transparent;
+		border-right: 0px;
+		border-left-color:#fff;
+		background-color:transparent;
+		right:52px;
+		top:5%;
+	}
+}
+@media only screen and (min-width: 1200px) and (max-width: 1299px) {
+
+
+}
+@media only screen and (max-width: 767px) {
+
+	#floatDiv {
+		display: none;
+	}
+
+}

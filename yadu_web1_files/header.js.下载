@@ -1,0 +1,242 @@
+﻿$(function() {
+
+/*	$('body').attr("oncontextmenu", "self.event.returnValue=false");
+	$('body').attr("onselectstart", "return false");*/
+/*	$("#yaduheader").load("/page/components/nav.html", function() {*/
+		if ($('#myCarousel').length > 0) {
+			initNav();
+		}
+
+		setTimeout(function(){
+			$("div#yaduheader").fadeIn(200);
+		}, 300);
+
+		$("#searchA2").hover(
+			function() {
+				$("img", this).attr("src", "/static/page/img/searchHover@3x.png");
+			},
+			function() {
+				if ($('#myCarousel').length > 0) {
+					if(_lightFlag) {
+						$("img", this).attr("src", "/static/page/img/search@3x.png");
+					} else {
+						$("img", this).attr("src", "/static/page/img/searchBlack@3x.png");
+					}
+				} else {
+					$("img", this).attr("src", "/static/page/img/search@3x.png");
+				}
+			}
+		);
+
+		$("#loginA2").hover(
+			function() {
+				$("img", this).attr("src", "/static/page/img/loginHover@3x.png");
+			},
+			function() {
+				if ($('#myCarousel').length > 0) {
+					if(_lightFlag) {
+						$("img", this).attr("src", "/static/page/img/login@3x.png");
+					} else {
+						$("img", this).attr("src", "/static/page/img/loginBlack@3x.png");
+					}
+				} else {
+					$("img", this).attr("src", "/static/page/img/login@3x.png");
+				}
+			}
+		);
+
+		$("#shoppingA2").hover(
+			function() {
+				$("img", this).attr("src", "/static/page/img/shoppingHover@3x.png");
+			},
+			function() {
+				if ($('#myCarousel').length > 0) {
+					if(_lightFlag) {
+						$("img", this).attr("src", "/static/page/img/shopping@3x.png");
+					} else {
+						$("img", this).attr("src", "/static/page/img/shoppingBlack@3x.png");
+					}
+				} else {
+					$("img", this).attr("src", "/static/page/img/shopping@3x.png");
+				}
+			}
+		);
+		
+		$("#searchA2").click(
+			function() {
+				var nav = $("#yaduheader div#list_nav");
+				var textNav= $("div#textNav", nav);
+				var imgNav= $("div#imgNav", nav);
+				var searchNav= $("div#searchNav", nav);
+				textNav.css("display","none");
+				imgNav.css("display","none");
+				searchNav.fadeIn(500);
+			}
+		);
+		$("#searchNavImgBox2").click(
+			function() {
+				var nav = $("#yaduheader div#list_nav");
+				var textNav= $("div#textNav", nav);
+				var imgNav= $("div#imgNav", nav);
+				var searchNav= $("div#searchNav", nav);
+				textNav.fadeIn(300);
+				imgNav.fadeIn(300);
+				searchNav.css("display","none");
+			}
+		);
+	var nav_collapse_button1Flag = 0;
+	$("button#collapse_button1").click(
+			function() {
+				//alert(nav_collapse_button1Flag);
+				if (nav_collapse_button1Flag == 0) {
+					nav_collapse_button1Flag =1;
+					$(this).css("background-color","#ddd");
+
+				}else {
+					nav_collapse_button1Flag = 0;
+					$(this).css("background-color","transparent");
+				}
+			}
+	);
+
+		$("#searchA").click(
+			function() {
+				var nav = $("#yaduheader div#collapse_nav");
+				var textNav= $("ul#textNav", nav);
+				var imgNav= $("ul#imgNav", nav);
+				var searchNav= $("ul#searchNav", nav);
+				var button1= $("button#collapse_button1", nav);
+				var button2= $("button#collapse_button2", nav);
+//				textNav.css("display","none");
+//				imgNav.css("display","none");
+				textNav.fadeOut(300);
+				imgNav.fadeOut(500);
+				setTimeout(function () {
+			        searchNav.fadeIn(1000);
+			    }, 500);
+				
+				
+				button1.css("display","none");
+				button2.css("display","inline");
+			}
+		);
+		$("button#collapse_button2").click(
+			function() {
+				var nav = $("#yaduheader div#collapse_nav");
+				var textNav= $("ul#textNav", nav);
+				var imgNav= $("ul#imgNav", nav);
+				var searchNav= $("ul#searchNav", nav);
+				var button1= $("button#collapse_button1", nav);
+				var button2= $("button#collapse_button2", nav);
+//				textNav.css("display","none");
+//				imgNav.css("display","none");
+				searchNav.css("display","none");
+				textNav.fadeIn(300);
+				imgNav.fadeIn(300);
+				
+				button1.css("display","inline");
+				button2.css("display","none");
+			}
+		);
+		
+		
+		
+		
+
+		/*$("#shangchengLink").hover(
+			function() {
+				$(this).removeClass("hover1");
+				$(this).addClass("hover1");
+
+				$("#productBox1").fadeIn(0);
+				$("#productBox2").fadeIn(0);
+				$("#product1").fadeIn(500);
+				$("#product2").fadeIn(700);
+				$("#product3").fadeIn(700);
+				$("#product4").fadeIn(900);
+				$("#product5").fadeIn(900);
+				$("#product6").fadeIn(1100);
+				$("#product7").fadeIn(1100);
+				$("#product8").fadeIn(1300);
+				$("#product9").fadeIn(1300);
+			},
+			function() {
+				$(this).removeClass("hover1");
+				setTimeout(function() {
+					if($("#productBox1").hasClass("hover0")) { //说明没有从div回到按钮 
+					} else {
+
+						$("#productBox1").fadeOut(0);
+						$("#productBox2").fadeOut(0);
+						$("#product9").fadeOut(500);
+						$("#product8").fadeOut(500);
+						$("#product7").fadeOut(500);
+						$("#product6").fadeOut(500);
+						$("#product5").fadeOut(500);
+						$("#product4").fadeOut(500);
+						$("#product3").fadeOut(500);
+						$("#product2").fadeOut(500);
+						$("#product1").fadeOut(500);
+					}
+				}, 100);
+
+			}
+		);*/
+
+		$("#productBox1").hover(
+			function() {
+				$(this).removeClass("hover0");
+
+				$(this).addClass("hover0");
+			},
+			function() {
+				$(this).removeClass("hover0");
+
+				setTimeout(function() {
+					if($("#shangchengLink").hasClass("hover1")) { //说明没有从div回到按钮 
+
+					} else {
+
+						$("#productBox1").fadeOut(0);
+						$("#productBox2").fadeOut(0);
+						$("#product9").fadeOut(500);
+						$("#product8").fadeOut(500);
+						$("#product7").fadeOut(500);
+						$("#product6").fadeOut(500);
+						$("#product5").fadeOut(500);
+						$("#product4").fadeOut(500);
+						$("#product3").fadeOut(500);
+						$("#product2").fadeOut(500);
+						$("#product1").fadeOut(500);
+					}
+				}, 100);
+
+			}
+		);
+		
+		$("div[id^='product']", $("#productBox2")).hover(
+			function() {
+				$(this).css("background-color", "#EBEBEB");
+			},
+			function() {
+				$(this).css("background-color", "white");
+			}
+		);
+		
+/*
+		return false;
+	});*/
+	
+	
+
+});
+
+
+
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?77befaacbacb7b71f92b91eec5b698ae";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();

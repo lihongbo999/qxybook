@@ -1,0 +1,196 @@
+/**
+ * Created by Administrator on 2016/11/10.
+ */
+
+(function(m, ei, q, i, a, j, s) {
+        m[i] = m[i] || function() {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        j = ei.createElement(q),
+            s = ei.getElementsByTagName(q)[0];
+        j.async = true;
+        j.charset = 'UTF-8';
+        j.src = 'https://static.meiqia.com/dist/meiqia.js?_=t';
+        s.parentNode.insertBefore(j, s);
+    })(window, document, 'script', '_MEIQIA');
+    _MEIQIA('entId', 69844);
+
+
+
+$(function() {
+
+	setTimeout(function(){
+		$("div#yadufooter").fadeIn(300);
+	}, 300);
+
+	var clickDirectory = function() {
+		var span = $("span", this);
+		if(span.text() == "+") {
+			span.text("-");
+		} else {
+			span.text("+");
+		}
+
+	}
+
+	var _footerInfoFlag = false;
+
+	var directory_list_box = $("#yadufooter #directory_list_box");
+	var _companyBox = $("#companyBox", directory_list_box);
+	var _companyBoxIndex = 0;
+	var _collapseTwo = $("#collapseTwo", directory_list_box);
+	var _liList = $("li", _companyBox);
+	var _liListLength = $("li", _companyBox).length;
+
+	$.post("/rest/getFooterInfo", {
+
+	}, function (result) {
+		if (result.errorCode != 0) {
+
+		} else {
+			$("#directory_collapse #collapseThree a#serviceSupport1Link").attr("href", result.data.serviceSupport1.url);
+			$("#directory_list #directory_list_box #collapseThree a#serviceSupport1Link").attr("href", result.data.serviceSupport1.url);
+			$("#directory_collapse #collapseThree a#serviceSupport2Link").attr("href", result.data.serviceSupport2.url);
+			$("#directory_list #directory_list_box #collapseThree a#serviceSupport2Link").attr("href", result.data.serviceSupport2.url);
+
+			var companys = result.data.companyList;
+			var _collapseTwo_collapse = $("#directory_collapse #collapseTwo");
+			var newli = '';
+			for(var i = 0;i < companys.length; i++) {
+				if(i==2){
+					newli = '<li id="company' + i + '" class="list-group-item"><a target="_blank" href="http://www.yaduair.com">' + companys[i].productmain + '</a></li>'
+                    _collapseTwo_collapse.append(newli);
+                    _companyBox.append(newli);
+                    if(i < 4) {
+                        _collapseTwo.append(newli);
+                    }
+                    continue;
+				}
+					newli = '<li id="company' + i + '" class="list-group-item"><a target="_blank" href="/web/products/' + companys[i].id + '.html">' + companys[i].productmain + '</a></li>'
+				_collapseTwo_collapse.append(newli);
+				_companyBox.append(newli);
+				if(i < 4) {
+					_collapseTwo.append(newli);
+				}
+			}
+			_liList = $("li", _companyBox);
+			_liListLength = $("li", _companyBox).length;
+		}
+
+	});
+
+	$("#directory2prev a", directory_list_box).click(function(){
+
+		var appendIndex = [];
+		_collapseTwo.html("");
+		console.log("_companyBoxIndex"+ _companyBoxIndex);
+		if (_companyBoxIndex - 4 < 0) {
+
+			var yushu = _liListLength % 4;
+			if (yushu > 0) {
+				_companyBoxIndex = _liListLength - yushu;
+				for(var i = yushu;i > 0; i--) {
+					_collapseTwo.append(_liList[_liListLength - i]);
+				}
+			} else {
+				_companyBoxIndex = _liListLength - 4;
+				for(var i = 4;i > 0; i--) {
+					_collapseTwo.append(_liList[_liListLength - i]);
+				}
+			}
+
+		} else {
+			_companyBoxIndex = _companyBoxIndex - 4;
+			appendIndex.push(_companyBoxIndex);
+			if (_companyBoxIndex + 1 < _liListLength) {
+				appendIndex.push(_companyBoxIndex + 1);
+			}
+			if (_companyBoxIndex + 2 < _liListLength) {
+				appendIndex.push(_companyBoxIndex + 2);
+			}
+			if (_companyBoxIndex + 3 < _liListLength) {
+				appendIndex.push(_companyBoxIndex + 3);
+			}
+			for(var i = 0;i < appendIndex.length; i++) {
+				_collapseTwo.append(_liList[appendIndex[i]]);
+			}
+		}
+		return false;
+	});
+
+	$("#directory2next a", directory_list_box).click(function(){
+
+		var appendIndex = [];
+		_collapseTwo.html("");
+		if (_companyBoxIndex + 4 >= _liListLength) {
+			_companyBoxIndex = 0;
+		} else {
+			_companyBoxIndex = _companyBoxIndex + 4;
+		}
+		appendIndex.push(_companyBoxIndex);
+		if (_companyBoxIndex + 1 < _liListLength) {
+			appendIndex.push(_companyBoxIndex + 1);
+		}
+		if (_companyBoxIndex + 2 < _liListLength) {
+			appendIndex.push(_companyBoxIndex + 2);
+		}
+		if (_companyBoxIndex + 3 < _liListLength) {
+			appendIndex.push(_companyBoxIndex + 3);
+		}
+		for(var i = 0;i < appendIndex.length; i++) {
+			_collapseTwo.append(_liList[appendIndex[i]]);
+		}
+
+		return false;
+	});
+
+
+/*	$("#yadufooter").load("/page/components/footer.html", function() {*/
+
+		$("#directory1").click(clickDirectory);
+		$("#directory2").click(clickDirectory);
+		$("#directory3").click(clickDirectory);
+		$("#directory4").click(clickDirectory);
+
+		$("#weiboiconLink").hover(
+			function() {
+				$("img", this).attr("src", "/static/page/img/weiboiconhover@3x.png");
+			},
+			function() {
+				$("img", this).attr("src", "/static/page/img/weiboicon@3x.png");
+			}
+		);
+
+		$("#weixiniconLink").hover(
+			function() {
+				$("img", this).attr("src", "/static/page/img/weixiniconhover@3x.png");
+			},
+			function() {
+				$("img", this).attr("src", "/static/page/img/weixinicon@3x.png");
+			}
+		);
+
+		$("#weiboiconLink2").hover(
+			function() {
+				$("a img", this).attr("src", "/static/page/img/weiboiconhover@3x.png");
+			},
+			function() {
+				$("a img", this).attr("src", "/static/page/img/weiboicon@3x.png");
+			}
+		);
+
+		$("#weixiniconLink2").hover(
+			function() {
+				$("a img", this).attr("src", "/static/page/img/weixiniconhover@3x.png");
+				$("div#yadufooter div#directory_list div#telDiv div#weixiniconLink2 #weixiniconLink2floatDiv").show();
+			},
+			function() {
+				$("a img", this).attr("src", "/static/page/img/weixinicon@3x.png");
+				$("div#yadufooter div#directory_list div#telDiv div#weixiniconLink2 #weixiniconLink2floatDiv").hide();
+			}
+		);
+
+/*		return false;
+	})*/
+
+});

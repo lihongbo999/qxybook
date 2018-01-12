@@ -1,0 +1,511 @@
+div#yadufooter {
+	font-family: 'PingFang SC', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans GB', 'Microsoft Yahei', 微软雅黑, STHeiti, 华文细黑, sans-serif;
+}
+
+div#yadufooter {
+	display: none;
+}
+
+div#yadufooter,
+div#yadufooter div,
+div#yadufooter ul,
+div#yadufooter li {
+	background-color: #f3f3f3;
+}
+
+div#yadufooter div#directory_collapse ul.list-group,
+div#yadufooter div#directory_list ul.list-group {
+	margin-bottom: 0px !important;
+}
+
+
+
+
+
+@media only screen and (min-width: 767px) {
+	div#service_list {
+		display: inline;
+	}
+	div#directory_list {
+		display: inline;
+	}
+	div#directory_collapse {
+		display: none;
+	}
+	
+}
+
+@media only screen and (min-width: 992px) {
+	
+	}
+	
+@media screen and (min-width: 768px) and (max-width: 992px){
+	
+	}
+
+
+
+@media only screen and (max-width: 767px) {
+	div#service_list {
+		display: none;
+	}
+	div#directory_list {
+		display: none;
+	}
+
+	div#yadufooter a#weiboiconLink {
+		display: none;
+	}
+	div#yadufooter a#weixiniconLink {
+		display: none;
+	}
+	div#directory_collapse {
+		display: inline;
+	}
+	div#directory_collapse a{
+		color: #979797;
+	}
+	
+	div#directory_collapse li {
+		border-top: 0px !important;
+		border-left: 0px !important;
+		border-right: 0px !important;
+		margin-bottom: 0px;
+		color: #333333;
+	}
+	div#directory_collapse li span {
+		float: right;
+		color: gray;
+		font-size: 20px;
+		margin-top: -6px;
+		padding: 0;
+	}
+	div#directory_collapse div#telDiv {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		text-align: center;
+	}
+	
+	div#yadufooter div#directory_collapse div#telDiv span.telDivSpan1 {
+		color: #333333;
+		font-size: 16px;
+	}
+	
+	div#yadufooter div#directory_collapse div#telDiv span.telDivSpan2 {
+		color: #979797;
+		font-size: 12px;
+	}
+	
+	div#yadufooter div#directory_collapse div#telDiv span.telDivSpan3 {
+		color: #c39e53;
+		font-size: 24px;
+	}
+	
+	div#yadufooter div#directory_collapse ul.list-group li {
+		font-size: 12px;
+		color: #979797;
+		border: 0px !important;
+	}
+	
+	img.footerweibo {
+		width: 10%;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	footer {
+		height: auto;
+		color: #EBEBEB;
+		background-color: #2c2c2c !important;
+	}
+
+	footer div.footerimg {
+		display: none;
+	}
+	footer div.footerText{
+		background-color: #2c2c2c !important;
+	}
+	
+	footer div.footerlink{
+		background-color: #2c2c2c !important;
+	}
+	
+	footer div.footerlink{
+		float: left;
+		background-color: #2c2c2c !important;
+		padding-left: 5px;
+		padding-right: 5px;
+		height: 18px;
+	}
+	
+	/*footer div.footerlinkMiddleEx a{
+		border-right: 0px !important;
+	}
+	
+	footer div.footerlinkMiddle{
+		clear: both;
+	}*/
+	
+	footer div.footerlink a{
+		padding-left: 5px;
+		padding-right: 10px;
+		color: #b6b6b6;
+		text-decoration:none;
+		font-size: 12px;
+		border-right: 1px solid #b6b6b6 ;
+	}
+	
+	footer div.footerlink a.last{
+
+		border-right: 0px;
+	}
+	
+	footer div.address {
+		clear: both;
+		padding-top: 2px;
+		padding-left: 9px;
+		background-color: #2c2c2c !important;
+	}
+	
+	footer div.address span {
+		font-size: 12px;
+		color: #b6b6b6;
+	}
+	
+}
+
+@media only screen and (min-width: 1200px) {
+	div#yadufooter  div#directory_list div#directory_list_box {
+		height: 200px;
+	}
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1200px){
+	div#yadufooter  div#directory_list div#directory_list_box {
+		height: 200px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+
+
+div#yadufooter ul.service {
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+}
+
+	div#yadufooter ul.service li {
+		list-style-type:none;
+		float: left;
+		border-bottom: #d7d7d7 1px solid;
+		text-align: center
+	}
+	div#yadufooter ul.service li div {
+		position: relative;
+		border: 1px;
+	}
+	div#yadufooter ul.service li img {
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		width: 100%;
+	}
+
+	div#yadufooter ul.service li span {
+		color: #333333;
+	}
+
+	div#yadufooter ul.service li.li0 {
+		width: 15%;
+		border-bottom: 0px !important;
+	}
+
+	div#yadufooter ul.service li.li1 {
+		width: 14%;
+		border-bottom: 0px !important;
+	}
+
+	div#yadufooter ul.service li.li2 {
+		width: 14%;
+		border-bottom: 0px !important;
+	}
+
+	div#yadufooter ul.service li.li3 {
+		width: 14%;
+		border-bottom: 0px !important;
+	}
+
+	div#yadufooter ul.service li.li4 {
+		width: 14%;
+		border-bottom: 0px !important;
+	}
+
+	div#yadufooter ul.service li.li5 {
+		width: 14%;
+		border-bottom: 0px !important;
+	}
+
+	div#yadufooter ul.service li.li6 {
+		width: 15%;
+		border-bottom: 0px !important;
+	}
+
+	div#yadufooter div#directory_list li {
+		border: 0px !important;
+	}
+
+	div#directory_list div#directory_list_blank1 {
+		float: left;
+		width: 16%;
+	}
+
+	div#yadufooter  div#directory_list div#directory_list_box {
+		float: left;
+		width: 68%;
+		margin-top: -10px;
+		border-top: 1px solid #d7d7d7;
+	}
+
+	div#yadufooter div#directory_list div#directory_list_blank2 {
+		float: left;
+		width: 16%;
+	}
+	div#yadufooter  div#directory_list div#directory_list_box div#directory2 li#directory2Title {
+		padding-bottom: 0px;
+	}
+	div#yadufooter  div#directory_list div#directory_list_box div#directory2 li#directory2prev,
+	div#yadufooter  div#directory_list div#directory_list_box div#directory2 li#directory2next{
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	div#yadufooter  div#directory_list div#directory_list_box div#directory2 ul#collapseTwo li:first-child{
+		padding-top: 0px;
+	}
+	div#yadufooter  div#directory_list div#directory_list_box div#directory2 li#directory2prev a,
+	div#yadufooter  div#directory_list div#directory_list_box div#directory2 li#directory2next a{
+		cursor: pointer;
+		color: #979797;
+	}
+
+	div#yadufooter  div#directory_list div#directory_list_box div#directory2 li#directory2Title a{
+		display:inline-table;
+		border:1px solid #b4b4b4;
+		text-align:center;
+		cursor: pointer;
+		color: #444444;
+	}
+
+	div#yadufooter div#directory_list div#directory_list_box div#listDiv {
+		float: left;
+		width: 80%;
+	}
+	div#yadufooter div#directory_list div#directory_list_box div#listDiv li{
+		padding-left: 0px;
+	}
+
+	div#yadufooter div#directory_list div#directory_list_box div#listDiv ul.list-group li{
+		padding-top: 5px;
+		padding-bottom: 0px;
+	}
+
+	div#yadufooter div#directory_list div#directory_list_box div#listDiv ul.list-group a{
+		text-decoration:none;
+		color: #979797;
+	}
+	div#yadufooter div#directory_list div#directory_list_box div#listDiv ul.list-group a:hover{
+		color: rgb(216, 192, 144);
+	}
+
+	div#yadufooter div#directory_list div#directory_list_box div#listDiv div.directory_box{
+		float: left;
+		width: 25%;
+	}
+
+
+	div#yadufooter div#directory_list div#directory_list_box div#telDiv {
+		float: left;
+		width: 20%;
+	}
+
+	div#yadufooter div#directory_list div#telDiv {
+		text-align: right;
+	}
+
+	div#yadufooter div#directory_list div#telDiv span.telDivSpan1 {
+		color: #333333;
+	}
+
+	div#yadufooter div#directory_list div#telDiv span.telDivSpan2 {
+		color: #979797;
+	}
+
+	div#yadufooter div#directory_list div#telDiv span.telDivSpan3 {
+		color: #c39e53;
+	}
+
+	div#yadufooter div#directory_list div#telDiv div#weiboiconLink2{
+		float: right;
+		margin-top:2px;
+
+	}
+
+	div#yadufooter div#directory_list div#telDiv div#weixiniconLink2{
+		position: relative;
+		float: right;
+		margin-top:2px;
+	}
+
+	div#yadufooter div#directory_list div#telDiv div#weixiniconLink2 #weixiniconLink2floatDiv{
+		position: absolute;
+		top:-185px;
+		/*left: -85px;*/
+		left: -320px;
+		border: 1px solid #dddddd;
+		padding:0 10px 10px 10px;
+		background-color: #f3f3f3;
+		text-align: center;
+		/*width: 132px;*/
+		width: 425px;
+		height: 172px;
+	}
+	div#yadufooter div#directory_list div#telDiv div#weixiniconLink2 #weixiniconLink2floatDiv span{
+		color: #c39e53;
+		font-size: 12px;
+	}
+	div#yadufooter div#directory_list div#telDiv div#weixiniconLink2 #weixiniconLink2floatDiv img{
+		width: 132px;
+	}
+	div#yadufooter div#directory_list div#telDiv div#weixiniconLink2 #weixiniconLink2floatDiv #triangleout{
+		position:absolute;
+		width:0;
+		height:0px;
+		border:10px solid transparent;
+		border-bottom: 0px;
+		border-top-color:#dddddd;
+		bottom:-12px;
+		right:20%;
+
+	}
+	div#yadufooter div#directory_list div#telDiv div#weixiniconLink2 #weixiniconLink2floatDiv #trianglein{
+		position:absolute;
+		width:0;
+		height:0px;
+		border:10px solid transparent;
+		border-bottom: 0px;
+		border-top-color:#fff;
+		background-color:transparent;
+		bottom:-10px;
+		right:20%;
+	}
+
+	footer {
+		background-color: #2c2c2c;
+	}
+
+	footer div.footerimg {
+
+		float: left;
+		background-color: #2c2c2c;
+		background-color: #2c2c2c !important;
+	}
+
+
+	footer div.footerimg div#footerimgBox{
+		background-color: #2c2c2c;
+		float: right;
+	}
+
+
+	footer div.footerText{
+		float: left;
+		background-color: #2c2c2c !important;
+	}
+
+
+	footer div.footerlink{
+		float: left;
+		background-color: #2c2c2c !important;
+		padding-left: 5px;
+		padding-right: 5px;
+		height: 18px;
+	}
+	footer div.footerlink a{
+		padding-left: 5px;
+		padding-right: 10px;
+		color: #b6b6b6;
+		text-decoration:none;
+		border-right: 1px solid #b6b6b6 ;
+	}
+
+	footer div.footerlink a.last{
+
+		border-right: 0px;
+	}
+
+	footer div.footerlink a:hover {
+		color: rgb(216, 192, 144);
+	}
+
+	footer div.address {
+		clear: both;
+		padding-top: 2px;
+		padding-left: 9px;
+		background-color: #2c2c2c !important;
+	}
+
+	footer div.address span {
+		color: #b6b6b6;
+	}
+
+
+}
+
+
+@media only screen and (min-width: 1440px) {
+	footer div.footerimg {
+		width: 26%;
+
+	}
+
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1440px){
+	footer div.footerimg {
+		width: 26%;
+
+	}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+	footer {
+		height: 45px;
+	}
+
+	footer div.footerimg {
+		display: none;
+		margin-top: 10px;
+		width: 16%;
+
+	}
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+
+	div#yadufooter ul.service li {
+
+		height: 68px;
+
+	}
+
+	div#yadufooter ul.service li div {
+		height: 25px;
+		width: 25px;
+	}
+
+
+}

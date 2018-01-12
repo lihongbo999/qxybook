@@ -1,0 +1,108 @@
+@width: `document.body.clientWidth`;
+@widthrate: `document.body.clientWidth/1920`;
+@media only screen and (min-width: 991px) {
+
+    
+    
+    div#promoList div#promoListBox div#promo1,
+    div#promoList div#promoListBox div#promo2,
+    div#promoList div#promoListBox div#promo3,
+    div#promoList div#promoListBox div#promo4 {
+        height: @widthrate * 280px;
+    }
+    
+
+    
+    div#promoList div#promoListBox div.promoImgBox {
+        width: @widthrate * 130px;
+        height: @widthrate * 100px;
+        margin: @widthrate * 85px auto 0px;
+    }
+    
+
+    div#promoList div#promoListBox div.promoTextBox1{
+        height: @widthrate * 140px;
+    }
+    div#promoList div#promoListBox div.promoTextBox1 p{
+        margin-bottom: @widthrate * 10px;
+        font-size: @widthrate * 24px;;
+    }
+    div#promoList div#promoListBox div.promoTextBox2 p{
+        font-size: @widthrate * 16px;;
+    }
+    
+    
+    
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    
+
+    div#promoList div#promoListBox div#promo1,
+    div#promoList div#promoListBox div#promo2,
+    div#promoList div#promoListBox div#promo3,
+    div#promoList div#promoListBox div#promo4 {
+        height: @widthrate * 2 * 280px;
+    }
+
+    
+    div#promoList div#promoListBox div.promoImgBox {
+        width: @widthrate * 2 * 130px;
+        height: @widthrate * 2 * 100px;
+        margin: @widthrate * 2 * 85px auto 0px;
+    }
+    
+
+    
+    div#promoList div#promoListBox div.promoTextBox1{
+        height: @widthrate * 276px;
+    }
+    div#promoList div#promoListBox div.promoTextBox1 p{
+        margin-bottom: @widthrate * 2 * 10px;
+        font-size: @widthrate * 2 * 24px;;
+    }
+    div#promoList div#promoListBox div.promoTextBox2 p{
+        font-size: @widthrate * 2 * 16px;;
+    }
+    
+    
+    
+}
+
+
+@media only screen and (max-width: 767px) {
+    
+
+    
+
+    div#promoList div#promoListBox div#promo1,
+    div#promoList div#promoListBox div#promo2,
+    div#promoList div#promoListBox div#promo3,
+    div#promoList div#promoListBox div#promo4 {
+        height: @widthrate * 2.9 * 280px;
+    }
+    
+
+    
+    div#promoList div#promoListBox div.promoImgBox {
+        width: @widthrate * 4.1 * 130px;
+        height: @widthrate * 4.1 * 100px;
+        margin: @widthrate * 2.9 * 85px auto 0px;
+    }
+    
+
+    
+    div#promoList div#promoListBox div.promoTextBox1{
+        height: @widthrate * 2.9 * 140px;
+    }
+    div#promoList div#promoListBox div.promoTextBox1 p{
+        margin-bottom: @widthrate * 4.1 * 10px;
+        font-size: @widthrate * 4.1 * 24px;;
+    }
+    div#promoList div#promoListBox div.promoTextBox2 p{
+        font-size: @widthrate * 4.1 * 16px;;
+    }
+    
+    
+}

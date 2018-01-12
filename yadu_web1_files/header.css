@@ -1,0 +1,587 @@
+div.hover0 {	
+}
+div.hover1 {	
+}
+
+/*@font-face {font-family:STHeiti; src: url("../fonts/STHeiti-Light.ttc")}
+@font-face {font-family:PingFangSC-Semibold; src: url("../fonts/PingFang-SC-Semibold.ttf")}
+@font-face {font-family:PingFangSC-Regular; src: url("../fonts/PingFang-SC-Regular.ttf")}
+@font-face {font-family:PingFangSC-Medium; src: url("../fonts/PingFang-Medium.otf")}*/
+
+a {
+	text-decoration:none;
+}
+body {
+	font-family: 'PingFang SC', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans GB', 'Microsoft Yahei', 微软雅黑, STHeiti, 华文细黑, sans-serif;
+}
+
+div#yaduheader {
+	display: none;
+	font-family: 'PingFang SC', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans GB', 'Microsoft Yahei', 微软雅黑, STHeiti, 华文细黑, sans-serif;
+}
+.whiteGround {
+	/*background-color: #EBEBEB;*/
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.blackGround {
+	/*background-color: black;*/
+	background: rgba(0, 0, 0, 0.8);
+	border-bottom-color: black;
+}
+
+.whiteText {
+	color: #EBEBEB !important;
+}
+.blackText {
+	color: #444444 !important;
+}
+.redText {
+	color: red !important;
+}
+div.navbarShadow {
+	box-shadow: 0px 2px 4px #d7d7d7;
+}
+
+div#collapse_nav ul#textNav a{
+	font-family: STHeiti;
+}
+div#list_nav div#list_nav_bar {
+	font-family: STHeiti;
+}
+div#list_nav div#productBox1 {
+	font-family: PingFangSC-Regular;
+	
+}
+
+
+
+
+/*div#list_nav div {
+	filter:alpha(opacity=90);  
+      -moz-opacity:0.9;  
+      -khtml-opacity: 0.9;  
+      opacity: 0.9;
+}*/
+
+
+div#list_nav a {
+	text-decoration:none;
+}
+
+div#list_nav div#textNav a,
+div#list_nav div#logoutDiv a,
+div#collapse_nav ul#imgNav li#logoutLi a{
+	color: #444444;
+}
+div#list_nav div#textNav div#textNavBox a:hover,
+div#list_nav div#logoutDiv a:hover,
+div#collapse_nav ul#imgNav li#logoutLi a:hover {
+	color: rgb(216, 192, 144) !important;
+}
+div#list_nav div#logoutDiv a {
+	cursor: pointer;
+}
+
+div#list_nav div#product1,
+div#list_nav div#product2,
+div#list_nav div#product3,
+div#list_nav div#product4,
+div#list_nav div#product5,
+div#list_nav div#product6,
+div#list_nav div#product7,
+div#list_nav div#product8,
+div#list_nav div#product9 {
+	cursor:pointer;
+	
+}
+
+@media only screen and (min-width: 767px) {
+	
+	div#collapse_nav {
+		display: none;
+	}
+	div#list_nav {
+		display: inline;
+		z-index: 999;
+	}
+
+	div#list_nav {
+		position: absolute !important;
+		width: 100%;
+		left: 0px;
+		top: 0px;
+	}
+	
+	
+	div#list_nav div#list_nav_bar div.imglogo {
+		padding-right: 0px;
+	}
+	
+	div#list_nav div#productBox1 {
+		background: white;
+		display: none;
+		margin-left: 0px;
+		margin-right: 0px;
+		color: #666666;
+	}
+	
+}
+
+@media only screen and (max-width: 767px) {
+	div#collapse_nav {
+		display: inline;
+	}
+	div#list_nav {
+		display: none;
+	}
+	nav.navbar {
+		margin-bottom: 0px;
+		border-left: 0px;
+		border-right: 0px;
+	}
+	nav.whiteGround {
+		background-color: #EBEBEB !important;
+	}
+	nav.blackGround {
+		background-color: black !important;
+		border-bottom-color: black;
+	}
+	nav div#example-navbar-collapse{
+		border-top: 0px;
+	}
+	
+	nav div.collapse ul.yadunav li {
+		font-family: Heiti;
+		font-size: 14px;
+	}
+	nav ul#textNav li a {
+		color: #444444;
+	}
+	nav ul#textNav li a:hover {
+		color: rgb(216, 192, 144) !important;;
+	}
+	
+	nav ul#imgNav li a {
+		width: 50px;
+		height: 50px;
+	}
+	
+	nav ul#imgNav li a img{
+		width: 100%;
+	}
+	
+	nav a.imglogo {
+		width: 122px;
+	}
+	nav a.imglogo img {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	div#list_nav{
+
+	}
+	div#list_nav div#list_nav_bar {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	div#list_nav div#list_nav_bar div.imglogo a {
+		float: right;
+		padding-right: 0;
+
+	}
+	div#list_nav div#homePageLink,
+	div#list_nav div#shangchengLink,
+	div#list_nav div#productList,
+  	div#list_nav div#shouhouLink,
+  	div#list_nav div#yewuLink,
+  	div#list_nav div#xinwenLink {
+	  	float: left;
+	  	text-align: center;
+  	}
+
+	div#list_nav div#tiyanguanLink {
+		float: left;
+		text-align: center;
+	}
+
+	div#list_nav div#usernameDiv {
+		float: right;
+		text-align: center;
+	}
+	div#list_nav div#logoutDiv {
+		float: right;
+		text-align: center;
+
+	}
+
+	div#list_nav div#list_nav_bar div#textNav div#textNavBox {
+		margin: auto;
+
+	}
+	div#list_nav div#list_nav_bar div#textNav div#textNavBox a {
+
+
+	}
+	div#list_nav div#list_nav_bar div#imgNav div#imgNavBox {
+
+		float: left;
+	}
+	div#list_nav div#list_nav_bar div#imgNav div#imgNavBox a {
+
+	}
+
+  div#list_nav div#list_nav_bar div#searchNav div#searchNavBox {
+	  margin: auto;
+
+	  border: 1px solid #d9d9d9;
+
+	  background-color: white;
+  }
+	div#list_nav div#list_nav_bar div#searchNav div#searchNavBox div#searchNavBox2 {
+		margin: auto;
+
+	}
+	div#list_nav div#list_nav_bar div#searchNav div#searchNavBox div#searchNavImgBox1{
+		float: left;
+
+	}
+	div#list_nav div#list_nav_bar div#searchNav div#searchNavBox div#searchContent{
+		float: left;
+
+		position:relative;
+	}
+	div#list_nav div#list_nav_bar div#searchNav div#searchNavBox div#searchContent input{
+		border: 0px;
+		padding: 0px;
+
+		outline: none !important;
+		position: absolute;
+		left:0;
+		top:1px;
+	}
+
+	div#list_nav div#list_nav_bar div#searchNav div#searchNavBox div#searchNavImgBox2{
+		float: right;
+		cursor: pointer;
+	}
+
+	div#list_nav div#productBox1 div#productBox2 {
+		margin: 0 auto;
+		background: white;
+		display: none;
+	}
+
+	div#list_nav div#productBox1 div#productBox2 div#product1,
+	div#list_nav div#productBox1 div#productBox2 div#product2,
+	div#list_nav div#productBox1 div#productBox2 div#product3,
+	div#list_nav div#productBox1 div#productBox2 div#product4,
+	div#list_nav div#productBox1 div#productBox2 div#product5,
+	div#list_nav div#productBox1 div#productBox2 div#product6,
+	div#list_nav div#productBox1 div#productBox2 div#product7,
+	div#list_nav div#productBox1 div#productBox2 div#product8,
+	div#list_nav div#productBox1 div#productBox2 div#product9 {
+		background: white;
+		float: left;
+		text-align: center;
+		display: none;
+	}
+
+	div#list_nav div#productBox1 div#productBox2 div.productLink {
+		position: relative;
+		margin: 0 auto;
+	}
+
+	div#list_nav div#productBox1 div#productBox2 div.productLink img {
+		position: absolute;
+		max-height: 100%;
+	}
+
+	div#list_nav div#productBox1 div#productBox2 div.productLink span {
+		color: #666666;
+	}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+	div#list_nav{
+		height: 50px;
+
+	}
+	div#list_nav div#list_nav_bar {
+		height: 50px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	div#list_nav div#list_nav_bar div.imglogo a {
+		float: right;
+		padding-right: 0;
+		margin-right: 0px;
+		margin-top: 6px;
+		padding-top: 9px;
+		padding-bottom: 9px;
+		padding-left: 9px;
+		width: 88px;
+		height: 4px;
+	}
+	div#list_nav div#homePageLink {
+		height: 50px;
+		line-height: 50px;
+		float: left;
+		width: 45px;
+		text-align: center;
+	}
+
+	div#list_nav div#shangchengLink,
+	div#list_nav div#productList,
+  	div#list_nav div#shouhouLink,
+  	div#list_nav div#yewuLink,
+  	div#list_nav div#xinwenLink {
+	  	height: 50px;
+	  	line-height: 50px;
+	  	float: left;
+	  	width: 61px;
+	  	text-align: center;
+  	}
+
+	div#list_nav div#tiyanguanLink {
+		height: 50px;
+		line-height: 50px;
+		float: left;
+		width: 75px;
+		text-align: center;
+	}
+	div#list_nav div#usernameDiv {
+		height: 50px;
+		line-height: 50px;
+		float: right;
+		width: 100px;
+		text-align: center;
+	}
+	div#list_nav div#logoutDiv {
+		height: 50px;
+		line-height: 50px;
+		float: right;
+		width: 29px;
+		text-align: center;
+	}
+
+	div#list_nav div#list_nav_bar div#textNav {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	div#list_nav div#list_nav_bar div#textNav div#textNavBox {
+		margin: auto;
+		/*width: 330px;*/
+		width: 436px;
+	}
+	div#list_nav div#list_nav_bar div#textNav div#textNavBox a {
+
+		font-size: 12px;
+	}
+	div#list_nav div#list_nav_bar div#imgNav div#imgNavBox {
+		margin-top: 9px;
+		float: left;
+	}
+	div#list_nav div#list_nav_bar div#imgNav div#imgNavBox a{
+		padding: 9.375px;
+		width: 32px;
+		height: 32px;
+	}
+
+  div#list_nav div#list_nav_bar div#searchNav div#searchNavBox {
+	  margin: auto;
+	  height: 28.75px;
+	  margin-top: 10.625px;
+	  border: 1px solid #d9d9d9;
+	  background-color: white;
+  }
+	div#list_nav div#list_nav_bar div#searchNav div#searchNavBox div#searchNavBox2 {
+		margin: auto;
+		height: 15.625px;
+		margin-top: 6.25px;
+	}
+	div#list_nav div#list_nav_bar div#searchNav div#searchNavBox div#searchNavImgBox1{
+		float: left;
+		width: 15.625px;
+		height: 15.625px;
+		margin: 0 12.5px;
+	}
+	div#list_nav div#list_nav_bar div#searchNav div#searchNavBox div#searchContent{
+		position: relative;
+		float: left;
+		height: 15.625px;
+	}
+	div#list_nav div#list_nav_bar div#searchNav div#searchNavBox div#searchContent input{
+		border: 0px;
+		padding: 0px;
+		height: 15.625px;
+		line-height: 15.625px;
+		font-size: 12px;
+		outline: none !important;
+		position: absolute;
+		left:0;
+		top:0px;
+	}
+	div#list_nav div#list_nav_bar div#searchNav div#searchNavBox div#searchNavImgBox2{
+		float: right;
+		width: 15.625px;
+		height: 15.625px;
+		margin: 0 12.5px 0 0;
+		cursor: pointer;
+	}
+
+	div#list_nav div#productBox1 div#productBox2 {
+		margin: 0 auto;
+		background: white;
+		display: none;
+	}
+
+	div#list_nav div#productBox1 div#productBox2 div#product1,
+	div#list_nav div#productBox1 div#productBox2 div#product2,
+	div#list_nav div#productBox1 div#productBox2 div#product3,
+	div#list_nav div#productBox1 div#productBox2 div#product4,
+	div#list_nav div#productBox1 div#productBox2 div#product5,
+	div#list_nav div#productBox1 div#productBox2 div#product6,
+	div#list_nav div#productBox1 div#productBox2 div#product7,
+	div#list_nav div#productBox1 div#productBox2 div#product8,
+	div#list_nav div#productBox1 div#productBox2 div#product9 {
+		background: white;
+		float: left;
+		text-align: center;
+		display: none;
+	}
+
+	div#list_nav div#productBox1 div#productBox2 div.productLink {
+		position: relative;
+		margin: 0 auto;
+	}
+
+	div#list_nav div#productBox1 div#productBox2 div.productLink img {
+		position: absolute;
+		max-height: 100%;
+	}
+
+	div#list_nav div#productBox1 div#productBox2 div.productLink span {
+		color: #666666;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 850px) {
+	div#list_nav div#homePageLink {
+		height: 50px;
+		line-height: 50px;
+		float: left;
+		width: 45px;
+		text-align: center;
+	}
+	div#list_nav div#shangchengLink,
+	div#list_nav div#productList,
+	div#list_nav div#shouhouLink,
+	div#list_nav div#yewuLink,
+	div#list_nav div#xinwenLink {
+		height: 50px;
+		line-height: 50px;
+		float: left;
+		width: 55px;
+		text-align: center;
+	}
+
+	div#list_nav div#tiyanguanLink {
+		height: 50px;
+		line-height: 50px;
+		float: left;
+		width: 70px;
+		text-align: center;
+	}
+
+	div#list_nav div#list_nav_bar div#textNav div#textNavBox {
+		margin: auto;
+		/*width: 330px;*/
+		width: 391px;
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+	div#collapse_nav ul#searchNav div#searchNavBox {
+		height: 50px;
+		background-color: white;
+		padding: 10px 0;
+	}
+
+	div#collapse_nav ul#searchNav div#searchNavBox div#searchNavBox2 {
+		height: 40px;
+
+
+	}
+
+	div#collapse_nav ul#searchNav div#searchNavBox div#searchNavBox2 div#searchNavImgBox1{
+		float: left;
+		width: 25px;
+		height: 25px;
+		margin: 0 10px;
+	}
+	div#collapse_nav ul#searchNav div#searchNavBox div#searchNavBox2 div#searchContent{
+		position: relative;
+		float: left;
+		height: 25px;
+	}
+
+	div#collapse_nav ul#searchNav div#searchNavBox div#searchNavBox2 div#searchContent input{
+		border: 0px;
+		padding: 0px;
+		height: 25px;
+		height: 25px;
+		font-size: 12px;
+		outline: none !important;
+		position: absolute;
+		left:0;
+		top:0px;
+	}
+
+	div#collapse_nav ul#searchNav div#searchNavBox div#searchNavBox2 div#searchNavImgBox2{
+		float: right;
+		width: 50px;
+		height: 25px;
+		line-height: 25px;
+		text-align: center;
+		margin: 0 10px 0 0;
+		font-size: 12px;
+		color: #444444;
+		border: 1px solid #d9d9d9;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		-o-border-radius: 3px;
+		border-radius: 3px;
+	}
+
+	div#collapse_nav button#collapse_button2 {
+		padding: 0;
+		width: 44px;
+		height: 34px;
+		display: none;
+	}
+
+	div#collapse_nav button#collapse_button2 span{
+		font-size: 18px;
+	}
+	div#collapse_nav button#collapse_button2 span.blackSpan{
+		color: #444444;
+	}
+	div#collapse_nav button#collapse_button2 span.whiteSpan{
+		color: #EBEBEB;
+	}
+
+	div#collapse_nav ul#imgNav li#usernameLi{
+		padding: 10px 15px;
+	}
+	div#collapse_nav ul#imgNav li#logoutLi a{
+		width: 100%;
+	}
+
+}
